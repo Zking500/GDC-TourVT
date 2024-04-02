@@ -20,7 +20,8 @@
             var basePath = 'C:/Users/legit/Downloads/zona de testeo/app-files/tiles/';
 
             // Crear el visor Marzipano
-            var viewer = new Marzipano.Viewer(document.getElementById('tour-container'));
+            var viewerOpts = { controls: { mouseViewMode: 'drag' } }; // Opciones del visor
+            var viewer = new Marzipano.Viewer(document.getElementById('tour-container'), viewerOpts);
 
             // Crear un nuevo escenario utilizando la ruta de tu proyecto Marzipano
             var scene = viewer.createScene({
