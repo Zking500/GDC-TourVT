@@ -2,39 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tour Virtual</title>
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="C:\Users\legit\Downloads\zona de testeo\app-files\style.css">
-    <link rel="stylesheet" href="C:\Users\legit\Downloads\zona de testeo\app-files\vendor\reset.min.css">
-    <!-- Biblioteca Marzipano -->
-    <script src="C:\Users\legit\Downloads\zona de testeo\app-files\vendor\marzipano.js"></script>
+    <title>Zona de Testeo</title>
+    <!-- Agregar referencia al archivo CSS de Marzipano (si es necesario) -->
+    <!-- <link rel="stylesheet" href="ruta_al_archivo_css"> -->
+    <link rel="stylesheet" href="C:\Users\legit\Downloads\zona-de-testing\app-files\vendor\reset.min.css">
+    <link rel="stylesheet" href="C:\Users\legit\Downloads\zona-de-testing\app-files\style.css">
+
+    <!-- Agregar referencias a los archivos JavaScript de Marzipano -->
+    <!-- <script src="ruta_al_archivo_js"></script> -->
+    <script src="C:\Users\legit\Downloads\zona-de-testing\app-files\vendor\bowser.min.js"></script>
+    <script src="C:\Users\legit\Downloads\zona-de-testing\app-files\vendor\marzipano.js"></script>
+    <script src="C:\Users\legit\Downloads\zona-de-testing\app-files\vendor\screenfull.min.js"></script>
+    <script src="C:\Users\legit\Downloads\zona-de-testing\app-files\data.js"></script>
+    <script src="C:\Users\legit\Downloads\zona-de-testing\app-files\index.js"></script>
 </head>
 <body>
     <!-- Contenedor para el tour virtual -->
     <div id="tour-container"></div>
 
-    <script>
-        // Función para inicializar el tour virtual
-        function initTour() {
-            // Configurar la ruta base de los archivos del tour virtual
-            var basePath = 'C:/Users/legit/Downloads/zona de testeo/app-files/tiles/';
-
-            // Crear el visor Marzipano
-            var viewerOpts = { controls: { mouseViewMode: 'drag' } }; // Opciones del visor
-            var viewer = new Marzipano.Viewer(document.getElementById('tour-container'), viewerOpts);
-
-            // Crear un nuevo escenario utilizando la ruta de tu proyecto Marzipano
-            var scene = viewer.createScene({
-                source: Marzipano.ImageUrlSource.fromString(
-                    basePath + '0-test_-space-photo-1_21/{z}/{f}/{y}/{x}.jpg',
-                    { cubeMapPreviewUrl: basePath + '0-test_-space-photo-1_21/preview.jpg' }
-                ),
-                view: { yaw: 0, pitch: 0, fov: Math.PI/3 }
-            });
-        }
-
-        // Llamar a la función para inicializar el tour cuando la página se haya cargado
-        window.onload = initTour;
-    </script>
+    <!-- Otro contenido de tu página -->
 </body>
 </html>
