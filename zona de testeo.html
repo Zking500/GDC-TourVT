@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Zona de Testeo</title>
     <!-- Agrega referencias a los archivos CSS de Marzipano -->
-    <link rel="stylesheet" href="C:/Userslegit/Downloads/zona de testeo/app-files/style.css">
+    <link rel="stylesheet" href="C:\Users\legit\Downloads\zona de testeo\app-files\style.css">
     <!-- Agrega referencias a los archivos JavaScript de Marzipano -->
-    <script src="C:/Users/legit/Downloads/zona de testeo/app-files/index.js"></script>
+    <script src="C:\Users\legit\Downloads\zona de testeo\app-files\index.js"></script>
 </head>
 <body>
     <!-- Contenedor para el tour virtual -->
@@ -16,7 +16,7 @@
         // Función para inicializar el tour virtual
         function initTour() {
             // Configurar la ruta base de los archivos del tour virtual
-            var basePath = 'C:\Users\legit\Downloads\zona de testeo';
+            var basePath = 'C:/Users/legit/Downloads/zona de testeo/';
 
             // Crear el visor Marzipano
             var viewer = new Marzipano.Viewer(document.getElementById('tour-container'));
@@ -24,8 +24,8 @@
             // Crear un nuevo escenario utilizando la ruta de tu proyecto Marzipano
             var scene = viewer.createScene({
                 source: Marzipano.ImageUrlSource.fromString(
-                    basePath + 'Test_-Space-Photo-1_21/{z}/{f}/{y}/{x}.jpg',
-                    { cubeMapPreviewUrl: basePath + 'Test_-Space-Photo-1_21.jpg' }
+                    basePath + 'app-files/Test_-Space-Photo-1_21/{z}/{f}/{y}/{x}.jpg',
+                    { cubeMapPreviewUrl: basePath + 'app-files/Test_-Space-Photo-1_21.jpg' }
                 ),
                 view: { yaw: 0, pitch: 0, fov: Math.PI/3 }
             });
@@ -36,3 +36,4 @@
     </script>
 </body>
 </html>
+
