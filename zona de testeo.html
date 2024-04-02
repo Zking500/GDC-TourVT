@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>zoa de testeo</title>
+        <!-- Agrega referencias a los archivos CSS de Marzipano -->
+        <link rel="stylesheet" href="ruta/a/marzipano.css">
+        <!-- Agrega referencias a los archivos JavaScript de Marzipano -->
+        <script src="ruta/a/marzipano.js"></script>
+        <!-- Otros estilos y scripts necesarios -->
+    </head>
+    <body>
+        <!-- Contenedor para el tour virtual -->
+        <div id="tour-container"></div>
+        <!-- Otro contenido de tu página -->
+    </body>
+    <script>
+        // Función para inicializar el tour virtual
+        function initTour() {
+            // Configurar la ruta de los archivos del tour virtual
+            var basePath = 'ruta/a/tu/carpeta/marzipano/';
+    
+            // Crear el visor Marzipano
+            var viewer = new Marzipano.Viewer(document.getElementById('tour-container'));
+    
+            // Crear un nuevo escenario utilizando la ruta de tu proyecto Marzipano
+            var scene = viewer.createScene({
+                source: Marzipano.ImageUrlSource.fromString(
+                    basePath + 'nombre-de-tu-escena/{z}/{f}/{y}/{x}.jpg',
+                    { cubeMapPreviewUrl: basePath + 'nombre-de-tu-escena/preview.jpg' }
+                ),
+                view: { yaw: 0, pitch: 0, fov: Math.PI/3 }
+            });
+        }
+    
+        // Llamar a la función para inicializar el tour cuando la página se haya cargado
+        window.onload = initTour;
+    </script>
+</html>
