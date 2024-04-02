@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Zona de Testeo</title>
-    <!-- Agrega referencias a los archivos CSS de Marzipano -->
+    <title>Tour Virtual</title>
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="C:\Users\legit\Downloads\zona de testeo\app-files\style.css">
-    <!-- Agrega referencias a los archivos JavaScript de Marzipano -->
+    <link rel="stylesheet" href="C:\Users\legit\Downloads\zona de testeo\app-files\vendor\reset.min.css">
+    <!-- Biblioteca Marzipano -->
     <script src="C:\Users\legit\Downloads\zona de testeo\app-files\vendor\marzipano.js"></script>
-    <script src="C:\Users\legit\Downloads\zona de testeo\app-files\index.js"></script>
 </head>
 <body>
     <!-- Contenedor para el tour virtual -->
@@ -17,31 +17,19 @@
         // Función para inicializar el tour virtual
         function initTour() {
             // Configurar la ruta base de los archivos del tour virtual
-            var basePath = 'C:/Users/legit/OneDrive/Desktop/';
+            var basePath = 'C:/Users/legit/Downloads/zona de testeo/app-files/tiles/';
 
             // Crear el visor Marzipano
             var viewer = new Marzipano.Viewer(document.getElementById('tour-container'));
 
-            // Verificar si el visor se ha inicializado correctamente
-            if (!viewer) {
-                console.error("Error: No se pudo inicializar el visor Marzipano.");
-                return;
-            }
-
             // Crear un nuevo escenario utilizando la ruta de tu proyecto Marzipano
             var scene = viewer.createScene({
                 source: Marzipano.ImageUrlSource.fromString(
-                    basePath + 'zona de testeo/{z}/{f}/{y}/{x}.jpg',
-                    { cubeMapPreviewUrl: basePath + 'zona de testeo/Test_-Space-Photo-1_21.jpg' }
+                    basePath + '0-test_-space-photo-1_21/{z}/{f}/{y}/{x}.jpg',
+                    { cubeMapPreviewUrl: basePath + '0-test_-space-photo-1_21/preview.jpg' }
                 ),
                 view: { yaw: 0, pitch: 0, fov: Math.PI/3 }
             });
-
-            // Verificar si el escenario se ha creado correctamente
-            if (!scene) {
-                console.error("Error: No se pudo crear el escenario Marzipano.");
-                return;
-            }
         }
 
         // Llamar a la función para inicializar el tour cuando la página se haya cargado
