@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu GDC-TOURVT</title>
         <style>
-            /* estilos para el css*/
+            /* estilos para el css temporal*/
             body {
                 font-family: Arial, Helvetica, sans-serif;
                 margin: 0;
@@ -20,13 +20,16 @@
     </head>
     <body>
         <header>
-            <h1>inicio</h1>
+            <h1>Menu</h1>
         </header>
-
+        
+        <!-- botones de movimiento -->
         <form action="seleccion-tour.html">
             <button>Selector de TourVirtual</button>
         </form>
-        <form action="centro de comando.html"></form>
+        <form action="EditarTours.html">
+            <button>Editar Tours</button>
+        </form>
 
         <footer>
             <p> &copy; GDC-TOURVT</p>
