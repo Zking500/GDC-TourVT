@@ -37,7 +37,7 @@ var APP_DATA = {
           "yaw": 1.27010328709299,
           "pitch": 0.1495688925309615,
           "title": "Marketing",
-          "text": "Encargado: Lic. Arturo Jeremías&nbsp;<div>contacto: LAJeremias@gmail.com</div><div>cel:3322110011</div>"
+          "text": "Encargado: Lic. Arturo Jeremías&nbsp;"
         }
       ]
     },
@@ -61,8 +61,8 @@ var APP_DATA = {
       ],
       "faceSize": 720,
       "initialViewParameters": {
-        "yaw": 0.9091376886816018,
-        "pitch": -0.03781319038811404,
+        "yaw": 1.6367726291290898,
+        "pitch": 0.09466632806653763,
         "fov": 1.3545525999327719
       },
       "linkHotspots": [
@@ -84,7 +84,7 @@ var APP_DATA = {
           "yaw": 0.7646709084372478,
           "pitch": -0.25237964750789743,
           "title": "Recursos Humanos",
-          "text": "Encargada: Lic. Sofia Gómez<div>contacto: LSG@gmail.com</div><div>cel:3344559922&nbsp;</div>"
+          "text": "Encargada: Lic. Sofia Gómez&nbsp;"
         }
       ]
     },
@@ -131,7 +131,7 @@ var APP_DATA = {
           "yaw": -0.3562664279750365,
           "pitch": -0.2132661451816258,
           "title": "Seguridad",
-          "text": "Encargado: Lic. Santiago Ismael<div>contacto: LSI@gmail.com</div><div>cel:3388452011</div>"
+          "text": "Encargado: Lic. Santiago Ismael"
         }
       ]
     },
@@ -178,7 +178,7 @@ var APP_DATA = {
           "yaw": -0.38564457720673495,
           "pitch": -0.003662354129193801,
           "title": "Psicóloga",
-          "text": "Encargada: Lic. Juana Rodríguez&nbsp;<div>contacto: LJR@gmail.com</div><div>cel:3355998877</div>"
+          "text": "Encargada: Lic. Juana Rodríguez&nbsp;"
         }
       ]
     },
@@ -219,7 +219,7 @@ var APP_DATA = {
           "yaw": -1.717398103453835,
           "pitch": -0.12330000186651269,
           "title": "Contaduría&nbsp;",
-          "text": "Encargado: Lic.Josué Roberto&nbsp;<div>contacto: LJRoberto@gmail.com</div><div>cel:3344556699</div>"
+          "text": "Encargado: Lic.Josué Roberto&nbsp;"
         }
       ]
     }

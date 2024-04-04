@@ -80,7 +80,7 @@ body.multiple-scenes.mobile #titleBar {
   line-height: 30px;
   padding: 5px;
   background-color: rgb(58,68,84);
-  background-color: rgba(58,68,84,0.8);
+  background-color: rgb(58,68,84);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -827,4 +827,16 @@ body.view-control-buttons .viewControlButton {
 }
 .viewControlButton-6 {
   margin-left: 105px;
+}
+
+#imageContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+#imageContainer img {
+  width: 100px;
+  height: 100px;
 }
