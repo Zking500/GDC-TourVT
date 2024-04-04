@@ -37,7 +37,7 @@ var APP_DATA = {
           "yaw": -0.6795864880556692,
           "pitch": -0.11978756026817905,
           "title": "Programación&nbsp;",
-          "text": "Encargado: Lic. Roberto Pérez Ochoa<div>esta en Marketing</div>"
+          "text": "Encargado: Lic. Roberto Pérez Ochoa<div>contacto: LRPerez@gmal.com</div><div>cel:3355667711<br><div>esta en Marketing</div></div>"
         }
       ]
     },
@@ -84,7 +84,7 @@ var APP_DATA = {
           "yaw": 1.9770682751620363,
           "pitch": -0.13444920384159964,
           "title": "Atención al cliente",
-          "text": "Encargado Lic. Juan Issac"
+          "text": "Encargado Lic. Juan Issac<div>contacto: LJIssac@gmail.com</div><div>cel:3366998877</div>"
         }
       ]
     },
@@ -131,7 +131,7 @@ var APP_DATA = {
           "yaw": -1.3536077426666644,
           "pitch": -0.14569638864853118,
           "title": "Marketing",
-          "text": "Encargada Lic. Gabriela Martinez"
+          "text": "Encargada Lic. Gabriela Martinez<div>contacto: LGMartinez@gmail.com</div><div>cel:3355774411</div>"
         },
         {
           "yaw": -2.8372160957940764,
